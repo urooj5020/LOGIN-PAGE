@@ -25,7 +25,6 @@ btn.addEventListener("click", (e) => {
               window.location.href = "/newpage.html";
         }
         else if(response.success = "false"){
-            
               alert(response.message)
         }
     }
