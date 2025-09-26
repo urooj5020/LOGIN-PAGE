@@ -21,10 +21,10 @@ btn.addEventListener("click", (e) => {
         let promise = await fetch(`https://turbodashdelivery.ae/api/v10/deliveryman/login`, options)
         let response = await promise.json()
         console.log(response)
-        if(response.success = "true"){
+        if(response.success === true){
               window.location.href = "/newpage.html";
         }
-        else if(response.success = "false"){
+        else if(response.success === false){
               alert(response.message)
         }
     }
